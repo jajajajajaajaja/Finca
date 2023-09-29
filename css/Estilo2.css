@@ -1,0 +1,25 @@
+.caja-verde{
+display: flex;
+justify-content:right;
+align-items: center;
+ background-color: rgb(10, 90, 10);
+ width: 1264px;
+ height: 700px;
+ margin: auto;
+ margin-left: 0px;
+ padding: 5px;
+}
+.caja-verde img{
+    width: 1340px;
+    height: 700px;
+}
+.mapa{
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+

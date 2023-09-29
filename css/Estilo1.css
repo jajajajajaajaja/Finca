@@ -1,0 +1,279 @@
+body   
+{
+
+color: black;
+margin: 0;
+background-image: url(../Imagenes/Fondo1.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+h1{
+font-family: 'Times New Roman', serif;
+font-size: 40px;
+text-align: center;
+padding: 5px;
+margin:100px;
+
+
+}
+h2{
+font-family: 'Times New Roman', serif;
+font-size: 40px;
+text-align: center;
+padding: 5px;
+margin:100px;
+
+}
+
+h3{
+	font-family: 'Times New Roman', serif;
+font-size: 40px;
+background: rgb(11, 158, 184);
+text-align: center;
+padding: 5px;
+margin:70px;
+}
+h4{
+	font-family: 'Times New Roman', serif;
+	font-size: 27px;
+	
+	padding:0px;
+	margin-left: 25px;
+
+}
+h5{
+	text-align: center;
+}
+h6{
+	text-align:below;
+	font-size: 18px;
+}
+h7{
+	font-family:'Times New Roman', serif;
+	font-size: 30px;
+	padding: 5px;
+    margin:100px;
+}
+b{
+	font-size: 18px;
+
+	padding:4px;
+	margin: 10px;
+	margin-left: 740px;
+
+}
+
+header
+{
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	z-index: 100;
+}
+
+nav
+{
+    background: rgba(0, 0, 0, 0.7);
+	float: left;
+	list-style: nones;
+	overflow: hidden;
+	width: 100%;
+	z-index: 100;
+
+}
+
+nav ul li 
+{
+	float: left;
+	font-family: Arial, Helveltica, sans-serif;
+	font-size: 15px;
+	list-style: none;
+}
+
+nav ul li a 
+{
+
+	display: block;
+	padding: 20px;
+	color: #ffff;
+	text-decoration: none;
+}
+
+nav ul li:hover 
+{
+	background: #eca023;
+}
+
+.como{
+	background: orange;
+	font-size: 25px;
+	font-family:'Times New Roman',serif;
+	box-shadow: 6px 20px 10px gray;
+}
+
+div.resplandor{
+
+	width: 65%;
+	float: right;
+	text-shadow: 10px 10px 3px rgba(10, 9, 9, 0.6);
+	background: orange;
+	box-shadow: 0px 0px 20px;
+}
+article
+{
+	font-size: 25px;
+	background: gray;
+	box-shadow: 6px 20px 10px white inset;
+}
+p{
+	color: black;
+	font-size: 30px;
+	text-shadow: 10px 10px 3px rgba(10, 9, 9, 0.6);
+}
+
+label
+{
+	float: left;
+	width: 100px;
+
+}
+input,textarea
+{
+	width: 200px;
+
+}
+
+  th.inicio
+{
+ background-color: orange;
+}
+submit
+{
+	background-color: blue;
+
+}
+
+tr.intercalado
+{
+	background-color: blue;
+}
+tr.color{
+	background-color:  #ab4493;
+}
+input.botones
+{
+	background-color: red;
+	height: 50px;
+}
+
+div.izquierda{
+	font-size: 20px;
+    margin: 15px;
+	width: 45%;
+	float: left;
+	background: rgb(89, 103, 167);
+	box-shadow: 0px 0px 50px;
+	height: 200px;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container-bar{
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 57%;
+}
+.container-bar a{
+	display: block;
+	width: 50px;
+	height: 53px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+}
+.container-bar a:hover{
+	background: #1c1c1c;
+}
+.container-bar .fa-facebook{
+	background: #3b5998;
+	border-radius: 0px 5px 0px 0px;
+}
+.container-bar .fa-youtube{
+	background: #e52a23;
+}
+.container-bar .fa-twitter{
+	background: #00acee;
+}
+.container-bar .fa-github{
+	background: #747473;
+}
+.container-bar .fa-pinterest{
+	background: #c8232c;
+border-radius: 0px 0px 5px 0p;	
+}
+
+.container-bar #title{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.container-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.fa-play{
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+
+}
